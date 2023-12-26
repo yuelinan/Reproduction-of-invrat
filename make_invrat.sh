@@ -1,0 +1,19 @@
+python make_invrat_dataset.py \
+  --gpu_id=0 \
+  --data_dir ./moive \
+  --dataset movie_reviews \
+  --gradient_accumulation_steps=1 \
+  --model_name=Bert_RNP2_share \
+  --lr=2e-05 \
+  --fixed yes \
+  --max_len=512 \
+  --alpha_rationle=0.2 \
+  --types=train \
+  --epochs=30 \
+  --batch_size=1 \
+  --class_num=2 \
+  --save_path=/put_your_own_rnp_model \
+  --alpha=0.1 \
+  --beta=0.01 \
+  --loss_type=none \
+  --seed=1 \
